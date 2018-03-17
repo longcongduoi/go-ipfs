@@ -6,7 +6,7 @@ import (
 	commands "github.com/ipfs/go-ipfs/core/commands"
 
 	lgc "github.com/ipfs/go-ipfs/commands/legacy"
-	cmds "gx/ipfs/QmabLouZTZwhfALuBcssPvkzhbYGMb4394huT7HY4LQ6d3/go-ipfs-cmds"
+	cmds "gx/ipfs/QmZjCJaGbdhT7vRbXKTTuJeUfNDZQeDZe4HD8xMjWQ6nkU/go-ipfs-cmds"
 )
 
 // This is the CLI root, used for executing commands accessible to CLI clients.

@@ -15,7 +15,7 @@ import (
 
 	floodsub "gx/ipfs/QmSFihvoND3eDaAYRCeLgLPt62yCPgMZs1NSZmKFEtJQQw/go-libp2p-floodsub"
 	pstore "gx/ipfs/QmXauCuJzmzapetmC6W4TuDJLL1yFFrVzSHoWv8YdbmnxH/go-libp2p-peerstore"
-	cmds "gx/ipfs/QmabLouZTZwhfALuBcssPvkzhbYGMb4394huT7HY4LQ6d3/go-ipfs-cmds"
+	cmds "gx/ipfs/QmZjCJaGbdhT7vRbXKTTuJeUfNDZQeDZe4HD8xMjWQ6nkU/go-ipfs-cmds"
 	cid "gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid"
 	cmdkit "gx/ipfs/QmceUdzxkimdYsgtX733uNgzf1DLHyBKN6ehGSp85ayppM/go-ipfs-cmdkit"
 	blocks "gx/ipfs/Qmej7nf81hi2x2tvjRBF3mcp74sQyuDH4VMYDGd1YtXjb2/go-block-format"
@@ -226,7 +226,7 @@ To use, the daemon must be run with '--enable-pubsub-experiment'.
 		topic := req.Arguments[0]
 
 		err = req.ParseBodyArgs()
-		if err != nil && !cmds.IsAllArgsAlreadyCovered(err) {
+		if err != nil {
 			res.SetError(err, cmdkit.ErrNormal)
 			return
 		}

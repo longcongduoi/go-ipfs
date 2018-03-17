@@ -9,7 +9,7 @@ import (
 	core "github.com/ipfs/go-ipfs/core"
 	coreunix "github.com/ipfs/go-ipfs/core/coreunix"
 
-	cmds "gx/ipfs/QmabLouZTZwhfALuBcssPvkzhbYGMb4394huT7HY4LQ6d3/go-ipfs-cmds"
+	cmds "gx/ipfs/QmZjCJaGbdhT7vRbXKTTuJeUfNDZQeDZe4HD8xMjWQ6nkU/go-ipfs-cmds"
 	"gx/ipfs/QmceUdzxkimdYsgtX733uNgzf1DLHyBKN6ehGSp85ayppM/go-ipfs-cmdkit"
 )
 
@@ -62,7 +62,7 @@ var CatCmd = &cmds.Command{
 		}
 
 		err = req.ParseBodyArgs()
-		if err != nil && !cmds.IsAllArgsAlreadyCovered(err) {
+		if err != nil {
 			res.SetError(err, cmdkit.ErrNormal)
 			return
 		}
